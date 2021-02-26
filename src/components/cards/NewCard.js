@@ -9,6 +9,20 @@ export default class AddCard extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.addToQues = this.addToQues.bind(this);
   }
+  
+  shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
 
   handleChange(event) {
     this.setState({[event.target.id] : event.target.value})
@@ -19,7 +33,9 @@ export default class AddCard extends React.Component {
       alert("Input cannot be a null value.")
     }
     else {
-      let newcard = { question: this.state.question, answers: [this.state.answer1, this.state.answer2, this.state.answer3, this.state.answer4], correct: this.state.correct };
+      let ans = [this.state.answer1, this.state.answer2, this.state.answer3, this.state.answer4];
+      ans = this.shuffle(ans);
+      let newcard = { question: this.state.question, answers: ans, correct: this.state.correct };
       let cards = JSON.parse(window.localStorage.getItem("cards"));
       
       cards = cards ? cards = JSON.stringify([...cards, newcard]) : JSON.stringify([newcard]);
