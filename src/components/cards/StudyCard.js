@@ -30,27 +30,12 @@ export default class StudyCard extends React.Component {
     this.checking("clear");
   }
 
-  shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-    return array;
-  }
-
   answerClicked(event) {
     let userAnswer = event.target.value;
     let answerClass = event.target.classList;
 
     let correct = this.state.cards[this.state.number].correct;
 
-    
     if (userAnswer === correct) {
       answerClass.replace("btn-dark", "btn-success");
       this.checking("correct");
