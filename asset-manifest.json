@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/omarabdiwali.github.io/study-cards/static/css/main.bf385dcd.chunk.css",
+    "main.js": "/omarabdiwali.github.io/study-cards/static/js/main.f0af60b3.chunk.js",
+    "main.js.map": "/omarabdiwali.github.io/study-cards/static/js/main.f0af60b3.chunk.js.map",
+    "runtime-main.js": "/omarabdiwali.github.io/study-cards/static/js/runtime-main.0964a6c0.js",
+    "runtime-main.js.map": "/omarabdiwali.github.io/study-cards/static/js/runtime-main.0964a6c0.js.map",
+    "static/js/2.a06a6d1e.chunk.js": "/omarabdiwali.github.io/study-cards/static/js/2.a06a6d1e.chunk.js",
+    "static/js/2.a06a6d1e.chunk.js.map": "/omarabdiwali.github.io/study-cards/static/js/2.a06a6d1e.chunk.js.map",
+    "index.html": "/omarabdiwali.github.io/study-cards/index.html",
+    "static/css/main.bf385dcd.chunk.css.map": "/omarabdiwali.github.io/study-cards/static/css/main.bf385dcd.chunk.css.map",
+    "static/js/2.a06a6d1e.chunk.js.LICENSE.txt": "/omarabdiwali.github.io/study-cards/static/js/2.a06a6d1e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0964a6c0.js",
+    "static/js/2.a06a6d1e.chunk.js",
+    "static/css/main.bf385dcd.chunk.css",
+    "static/js/main.f0af60b3.chunk.js"
+  ]
+}
