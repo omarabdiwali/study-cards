@@ -6,7 +6,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 class SettingsCard extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { number: window.localStorage.getItem("number") !== 0 ? 0 : Number(window.localStorage.getItem("number")), cards: JSON.parse(window.localStorage.getItem("cards"))};
+    this.state = { number: Number(window.localStorage.getItem("number")), cards: JSON.parse(window.localStorage.getItem("cards"))};
 
     this.handleChange = this.handleChange.bind(this);
     this.nextQuestion = this.nextQuestion.bind(this);
@@ -14,9 +14,6 @@ class SettingsCard extends React.Component {
     this.deleteCard = this.deleteCard.bind(this);
   }
   
-  componentDidMount() {
-    window.localStorage.setItem("number", Number(0));
-  }
   handleChange(event) {
     this.setState({value: event.target.value});
   }
@@ -38,6 +35,9 @@ class SettingsCard extends React.Component {
     cards.splice(this.state.number, 1);
     cards = JSON.stringify(cards);
     window.localStorage.setItem("cards", cards);
+    if (this.state.number !== 0) {
+      window.localStorage.setItem("number", this.state.number - 1);
+    }
     window.location.reload();
   }
 
