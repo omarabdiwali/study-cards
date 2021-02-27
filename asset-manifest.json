@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/study-cards/static/css/main.6cffcb07.chunk.css",
-    "main.js": "/study-cards/static/js/main.3503a242.chunk.js",
-    "main.js.map": "/study-cards/static/js/main.3503a242.chunk.js.map",
+    "main.js": "/study-cards/static/js/main.62117245.chunk.js",
+    "main.js.map": "/study-cards/static/js/main.62117245.chunk.js.map",
     "runtime-main.js": "/study-cards/static/js/runtime-main.4a988373.js",
     "runtime-main.js.map": "/study-cards/static/js/runtime-main.4a988373.js.map",
-    "static/js/2.a06a6d1e.chunk.js": "/study-cards/static/js/2.a06a6d1e.chunk.js",
-    "static/js/2.a06a6d1e.chunk.js.map": "/study-cards/static/js/2.a06a6d1e.chunk.js.map",
+    "static/js/2.cbd8df2e.chunk.js": "/study-cards/static/js/2.cbd8df2e.chunk.js",
+    "static/js/2.cbd8df2e.chunk.js.map": "/study-cards/static/js/2.cbd8df2e.chunk.js.map",
     "index.html": "/study-cards/index.html",
     "static/css/main.6cffcb07.chunk.css.map": "/study-cards/static/css/main.6cffcb07.chunk.css.map",
-    "static/js/2.a06a6d1e.chunk.js.LICENSE.txt": "/study-cards/static/js/2.a06a6d1e.chunk.js.LICENSE.txt"
+    "static/js/2.cbd8df2e.chunk.js.LICENSE.txt": "/study-cards/static/js/2.cbd8df2e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a988373.js",
-    "static/js/2.a06a6d1e.chunk.js",
+    "static/js/2.cbd8df2e.chunk.js",
     "static/css/main.6cffcb07.chunk.css",
-    "static/js/main.3503a242.chunk.js"
+    "static/js/main.62117245.chunk.js"
   ]
 }
