@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { SnackbarProvider, useSnackbar } from 'notistack';
+import { useSnackbar } from 'notistack';
 
 export default function ChangeCard({ question, answers, correct }) {
   
