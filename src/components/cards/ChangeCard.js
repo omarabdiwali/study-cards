@@ -34,16 +34,13 @@ export default function ChangeCard({ question, answers, correct }) {
   }
 
   function saveCard() {
-    let ques = document.getElementById('quest').value;
-    let ans1 = document.getElementById('a1').value;
-    let ans2 = document.getElementById('a2').value;
-    let ans3 = document.getElementById('a3').value;
-    let ans4 = document.getElementById('a4').value;
-    let cor = document.getElementById('corr').value;
+    
+    let cards = JSON.parse(window.localStorage.getItem("cards"));
+    let number = Number(window.localStorage.getItem("number"));
 
-    let ansList = [ans1, ans2, ans3, ans4];
-    let card = { question: question, answers: answers, correct: correct };
-    let newCard = { question: ques, answers: ansList, correct: cor };
+    let ansList = [a1, a2, a3, a4];
+    let card = cards[number];
+    let newCard = { question: quest, answers: ansList, correct: corr };
 
     if (JSON.stringify(card) !== JSON.stringify(newCard)) {
       let cards = JSON.parse(window.localStorage.getItem("cards"));
