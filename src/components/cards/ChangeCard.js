@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
+import { SnackbarProvider, useSnackbar } from 'notistack';
 
 export default function ChangeCard({ question, answers, correct }) {
+  
+  const { enqueueSnackbar } = useSnackbar();
 
   const [quest, setQuest] = useState(question);
   const [a1, setA1] = useState(answers[0]);
@@ -48,6 +51,7 @@ export default function ChangeCard({ question, answers, correct }) {
         let ind = cards.findIndex(x => JSON.stringify(x) === JSON.stringify(card));
         cards[ind] = newCard;
         window.localStorage.setItem("cards", JSON.stringify(cards));
+        enqueueSnackbar("Card saved!", {variant: "success", autoHideDuration: 2000});
       }
     }
   }
