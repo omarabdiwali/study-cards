@@ -43,7 +43,6 @@ export default function ChangeCard({ question, answers, correct }) {
     let newCard = { question: quest, answers: ansList, correct: corr };
 
     if (JSON.stringify(card) !== JSON.stringify(newCard)) {
-      let cards = JSON.parse(window.localStorage.getItem("cards"));
       if (card !== newCard) {
         let ind = cards.findIndex(x => JSON.stringify(x) === JSON.stringify(card));
         cards[ind] = newCard;
